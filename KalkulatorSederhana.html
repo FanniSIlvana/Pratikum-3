@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+ <TITLE>Kalkulator Sederhana</TITLE>
+ <style type="text/css">
+  .tombol{
+   background-color: blue;
+  }
+  .tabel{
+   background-color: gold;
+   margin: 10px;
+   padding: 10px;
+  }
+ </style>
+</HEAD>
+<BODY>
+ <form name="Kalkulator Sederhana">
+
+  <table style="background-color: " class="tabel">
+   <caption>Kalkulator Sederhana</caption> <!-- title diatas Kalkulator -->
+   <tr>
+     <!-- text type dinamakan "nilai 1" -->
+    <td>Nilai 1</td><td>:</td><td><input type="number" name="Nilai 1"></td>
+   </tr>
+   <tr>
+     <!-- text type dinamakan "nilai 2" -->
+    <td>Nilai 2</td><td>:</td><td><input type="number" name="Nilai 2"></td>
+   </tr>
+   <tr>
+     <!-- kotak hasil dan dinamakan "hasil" -->
+    <td>Hasil</td><td>:</td><td><input type="number" name="hasil"></td>
+   </tr>
+   <tr>
+    <td colspan="3" align="center"> <!-- memanggil kelas button -->
+     <input class="tombol" type="button" onclick="tambah()" value="  +  "> <!-- pembuatan button "tambah" -->
+     <input class="tombol" type="button" onclick="kurang()" value="  -  "> <!-- pembuatan button "pengurangan" -->
+     <input class="tombol" type="button" onclick="kali()" value="  *  "> <!-- pembuatan button "perkalian" -->
+     <input class="tombol" type="button" onclick="bagi()" value="  /  "> <!-- pembuatan button "pembagian" -->
+    </td>
+   </tr>
+  </table>
+ </form>
+
+</body>
+</html>
+<script type="text/javascript">
+// memanggil objek tambah
+function tambah(){
+ var nilai1=parseFloat(document.Kalkulator.nilai1.value);
+ var nilai2=parseFloat(document.Kalkulator.nilai2.value);
+// rumus untuk pertambahan
+ var hasil= nilai1+nilai2;
+// eksekusi untuk pertambahan
+ document.Kalkulator.hasil.value=hasil;
+}
+// memanggil objek kurang
+function kurang(){
+ var nilai1=parseFloat(document.Kalkulator.nilai1.value);
+ var nilai2=parseFloat(document.Kalkulator.nilai2.value);
+// rumus untuk pengurangan
+ var hasil= nilai1-nilai2;
+ // eksekusi untuk pengurangan
+ document.Kalkulator.hasil.value=hasil;
+}
+// memanggil objek perkalian
+function kali(){
+ var nilai1=parseFloat(document.Kalkulator.nilai1.value);
+ var nilai2=parseFloat(document.Kalkulator.nilai2.value);
+ // rumus untuk perkalian
+ var hasil= nilai1*nilai2;
+ // eksekusi untuk perkalian
+ document.Kalkulator.hasil.value=hasil;
+}
+// memanggil objek bagi
+function bagi(){
+ var nilai1=parseFloat(document.Kalkulator.nilai1.value);
+ var nilai2=parseFloat(document.Kalkulator.nilai2.value);
+ // rumus untuk pembagian
+ var hasil= nilai1/nilai2;
+ // eksekusi untuk pembagian
+ document.Kalkulator.hasil.value=hasil;
+}
+</script>

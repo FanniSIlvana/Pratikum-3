@@ -1,0 +1,26 @@
+<HTML>
+<HEAD></HEAD>
+<SCRIPT language="Javascript">
+
+function test(){
+  var val1=document.kirim. T1. value // membuat variabel val1 dan menyimpan nilai variabel
+  if (val1%2==0)//jika val1 modulus 2 memiliki nilai saama dengan 0
+
+  document.kirim.T2. value="bilangan genap"// mengidentifikasi variabel adalah bilangan genap
+  else // percabangan lain atau jika tidak
+  document.kirim.T2. value="bilangan ganjil"// mengidentifikasi variabel adalah bilangan ganjil
+
+}
+</SCRIPT>
+<BODY>
+
+<!-- membuat form menggunakan method post dan nama kirim -->
+<form method="POST" name="kirim">
+<!-- membuat paragraph BIL dengan input type text -->
+<p>BIL <input type="text" name="T1" size="20"> MERUPAKAN BIL <input type="text" name="T2" size="20"> </p>
+<!-- membuat paragraph dean input type button dengan nama B1 -->
+<p><input type="button" value="Tebak" name="B1" onclick=test()></p>
+
+</form>
+</BODY>
+</HTML>

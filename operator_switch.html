@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE>Contoh Program Javascript</TITLE>
+</HEAD>
+<SCRIPT language = "Javascript">
+function test()
+{
+  // variabel val1 menyimpan data dengan menginput nilai (1-5)
+  val1=window.prompt("Input Nilai(1-5):")
+  // memanggil variabel val1
+  switch (val1)
+  {
+    case "1" : // membuat case 1
+    document.write("bilangan satu") // blok kode program atau case 1 akan dijalankan
+    break // menghentikan proses perulangan
+
+    case "2" : // membuat case 2
+    document.write("bilangan dua") // blok kode program atau case 2 akan dijalankan
+    break // menghentikan proses perulangan
+
+    case "3" :
+    document.write("bilangan tiga")
+    break
+
+    case "4" :
+    document.write("bilangan empat")
+    break
+
+    case "5" :
+    document.write("bilangan lima")
+    break
+
+    default : // pilihan yang akan dieksekusi jika tidak menemukan nilai yang dicari
+    document.write("bilangan lainnya")
+  }
+}
+</SCRIPT>
+<BODY>
+  <input type="button" name="button1" value="switch" onclick=test()>
+</BODY>
+</HTML>
